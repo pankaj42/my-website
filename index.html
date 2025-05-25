@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-papB+2X0c2kGpKZnOM+ZbyV3OQ56Ey4eTTohF27QlD5rC5H7IfI6cegYf8uNTcUy4zyHdqZTl9MkK8c5G2Q+zA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>The Milestone Research</title>
+    <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Style.css">
+    
+
+
+</head>
+
+
+<body>
+
+    <!-- Navigation bar -->
+<!-- Navigation bar -->
+<nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="The Milestone Logo.png" alt="company logo">
+                <span class="company-name">The Milestone Research</span>
+            </a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="hover-links">Home</a></li>
+                    <li><a href="#" class="hover-links">Panel</a></li>
+                    <li><a href="#" class="hover-links">Services</a></li>
+                    <li><a href="#" class="hover-links" id="contactLink">Contact</a></li>
+                    <li><a href="#" class="hover-links">Join Panel</a></li>
+                    <li><a href="#" class="hover-links">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Modal -->
+<div id="contact-modal" class="modal-overlay">
+  <div class="modal-content">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+    <span class="close-modal">&times;</span>
+  </div>
+</div>
+
+
+<!-- Hero-Section -->
+
+<!-- Hero Section -->
+<section class="hero">
+  <canvas id="starburst"></canvas> <!-- ✨ Add this here -->
+  <div class="hero__overlay">
+    <div class="hero__content" data-aos="fade-up">
+      <h1 class="hero__title">Welcome to <span class="gradient-text">The Milestone Research</span></h1>
+      <p class="hero__subtitle">Connecting insights with innovation. Join our expert research panel or get in touch today.</p>
+      <div class="hero__buttons">
+        <a href="#" class="btn btn--primary">Get in Touch</a>
+        <a href="#" class="btn btn--secondary">Join Panel</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- About Section -->
+  <!-- About Section -->
+<section class="about" data-aos="fade-up">
+  <div class="about__container container">
+    <div class="about__wrapper">
+      <div class="about__image">
+        <img src="about-us.jpg" alt="About Us">
+      </div>
+      <div class="about__content">
+  <h2>About Us</h2>
+  <p>
+    The Milestone Research is a leading market research firm that bridges the gap between brands, markets, and people in the digital age. Through a rigorous, mixed-methods research approach, we deliver actionable insights that help global clients answer critical questions. Our work goes beyond data—advancing learning, improving healthcare outcomes, and contributing to societal well-being. These insights empower informed decision-making and drive strategic progress.
+  </p>
+  <p>
+    At The Milestone Research, we don’t just provide data—we provide the roadmap that drives your business forward. With our milestone research, we offer not only deep insights but also actionable strategies that turn challenges into opportunities. Let us help you transform data into decisions that shape the future of your business.
+  </p>
+  <a href="#" class="btn-view-more">View More</a>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section class="services" data-aos="fade-up">
+  <div class="services__container container">
+    <div class="services__intro">
+      <div class="services__image">
+        <img src="second (1).jpg" alt="Our Services">
+      </div>
+
+      <div class="services__content">
+        <h2>Services We Offer</h2>
+        <p>
+          Our dedicated end-to-end service combines research and analytics focusing on accuracy, security and speed. Our research capabilities and wide reach attract top consulting and global brands. Our aim is not just to provide encapsulated data as most of the market research companies do, rather we study and understand your core business needs and work in accordance to deliver the solutions that meet your most critical challenges. Our value driven and highly customized services are aimed to completely transform your business.
+        </p>
+        <a href="#" class="btn-view-more">Click here to download ESOMAR 28 questions for quality standards and our Panel Book</a>
+      </div>
+    </div>
+
+    <div class="services__cards">
+      <div class="service-card">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        <h3>Quantitative Research</h3>
+        <p>We collect and analyze large-scale data with statistical precision to deliver market-relevant insights. Our approach identifies trends, measures impact, and drives evidence-based decisions. By transforming complex datasets into clear, actionable intelligence, we empower organizations to think strategically, respond effectively to change, and achieve sustained business growth.</p>
+        <button class="read-more-btn">Read More</button>
+      </div>
+      <div class="service-card">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        <h3>Qualitative Research</h3>
+        <p>We explore human behavior through in-depth interviews, focus groups, and ethnographic methods. By uncovering emotions, motivations, and perceptions, we deliver rich insights that go beyond numbers. Our qualitative research reveals the "why" behind decisions—informing strategy, shaping messaging, and guiding brands with a deeper understanding of their audiences.</p>
+        <button class="read-more-btn">Read More</button>
+      </div>
+      <div class="service-card">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        <h3>Data Analytics</h3>
+        <p>We turn raw data into clear, strategic insights using advanced analytical tools and techniques. From pattern recognition to predictive modeling, our data analytics uncover hidden opportunities and optimize performance. We help businesses make smarter decisions by transforming complex information into practical, results-driven strategies that fuel innovation and growth.</p>
+       <button class="read-more-btn">Read More</button>
+      </div>
+      <div class="service-card">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+        <h3>Healthcare Research</h3>
+        <p>We provide specialized research for life sciences, pharmaceuticals, and healthcare innovations. Our work supports product development, patient engagement, and market access strategies. With deep industry knowledge and rigorous methodologies, we deliver insights that drive better outcomes, inform clinical and commercial decisions, and support the future of healthcare innovation.
+
+</p>
+    <button class="read-more-btn">Read More</button>  
+</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Why-choose-us -->
+<section class="why-choose-vertical container">
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="horizontal-features">
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="0">
+      <div class="icon-block blue">
+        <div class="square"></div>
+        <div class="outline-square"></div>
+      </div>
+      <h3>Our Mission</h3>
+      <p>At The Milestone Research, innovation thrives on inclusion. We champion diverse perspectives and foster a culture where creativity and collaboration lead to breakthrough insights that empower our clients and elevate our industry.</p>
+      <a href="#" class="view-more">View More</a>
+    </div>
+
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+      <div class="icon-block orange">
+        <div class="square"></div>
+        <div class="outline-square rotate"></div>
+      </div>
+      <h3>Our Promise</h3>
+      <p>We’re committed to being your trusted research partner—delivering accurate, timely, and actionable insights that move your business forward. Backed by experience and driven by precision, we’re here to unlock your next big opportunity.</p>
+      <a href="#" class="view-more">View More</a>
+    </div>
+
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+      <div class="icon-block pink">
+        <div class="square"></div>
+        <div class="outline-square"></div>
+      </div>
+      <h3>Our Approach</h3>
+      <p>We combine advanced methodologies with human intuition to decode market complexity. Our approach is future-focused, data-driven, and designed to accelerate innovation, differentiation, and growth for your brand.</p>
+      <a href="#" class="view-more">View More</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- differentiators -->
+ <section class="differentiators" data-aos="fade-up">
+  <div class="differentiators__container container">
+    <div class="differentiators__image">
+      <img src="austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Our Differentiators">
+    </div>
+    <div class="differentiators__content">
+      <h2>Our Differentiators</h2>
+      <ul class="differentiator-list">
+        <li data-aos="fade-up">
+          <i class="fas fa-lightbulb"></i>
+          <span><strong>Deep Domain Expertise:</strong> Highly experienced team with multi-sector knowledge across industries.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-check-circle"></i>
+          <span><strong>Proven Track Record:</strong> Over 1.25 million hours of business research delivered to 50+ satisfied clients worldwide.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-clock"></i>
+          <span><strong>Round-the-Clock Support:</strong> 24/7 research services available across all global time zones.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-chart-line"></i>
+          <span><strong>Real-Time Insights:</strong> Advanced analytics leveraging press releases, social media, earnings reports, and other key data sources.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-language"></i>
+          <span><strong>Global Language Coverage:</strong> Research support offered in 15+ languages to meet diverse client needs.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="500">
+          <i class="fas fa-pencil-ruler"></i>
+          <span><strong>Professional Design & Editorial Teams:</strong> Skilled in creating visually compelling, professionally written reports aligned with client branding and templates.</span>
+        </li>
+        <li data-aos="fade-up" data-aos-delay="600">
+          <i class="fas fa-shield-alt"></i>
+          <span><strong>Regulatory Excellence:</strong> Full compliance with ISO 27001, ISO 20252, and GDPR—ensuring the highest data security and quality standards.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Market-Trends -->
+<section class="market" data-aos="fade-up">
+  <div class="container market__container">
+    <h2 class="market__title">Market Trends & Insights</h2>
+    <div class="market__cards">
+      
+      <div class="market__card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card__content">
+          <h3>Latest Trends</h3>
+          <p>Explore the newest developments shaping industries and consumer behavior.</p>
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="card__btn">Read More</a>
+      </div>
+
+      <div class="market__card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card__content">
+          <h3>Industry Updates</h3>
+          <p>Stay informed with key updates, innovations, and competitive movements.</p>
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="card__btn">Read More</a>
+      </div>
+
+      <div class="market__card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card__content">
+          <h3>Insight Reports</h3>
+          <p>Dive deep into research-backed insights that drive smarter strategies.</p>
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="card__btn">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- market-numbers -->
+
+<section class="market-numbers">
+  <h2>Our Market & Numbers</h2>
+  <div class="stats-container">
+    <div class="stat-box">
+      <span class="counter" data-target="60          ">0</span><span class="plus">+</span>
+      <p>Languages</p>
+    </div>
+    <div class="stat-box">
+      <span class="counter" data-target="21700">0</span><span class="plus">+</span>
+      <p>Surveys done</p>
+    </div>
+    <div class="stat-box">
+      <span class="counter" data-target="200000">0</span><span class="plus">+</span>
+      <p>Completes delivered</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- contact-section -->
+
+<section class="contact-section">
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="form-box">
+      <h2>Request For Quote</h2>
+      <p>We will customize and design our business support services for your lorem ipsum dolor sit amet incididunt labore magna business needs.</p>
+      <form action="https://formsubmit.co/gpankj634@gmail.com" method="POST">
+        <!-- FormSubmit Hidden Fields -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <input type="text" name="lookingfor" placeholder="I'm Looking for ..." required />
+        <textarea name="message" placeholder="Please write in brief..." required></textarea>
+        <button type="submit">Get Started Now <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+
+    <!-- Contact Info & Image -->
+    <div class="contact-info-box">
+      <img src="contact.png" alt="Support Illustration" class="contact-img" />
+      <div class="contact-details">
+        <h3>Ways to get in touch</h3>
+        <p><i class="fas fa-envelope"></i> sales@themilestoneresearch.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> House No. 55,2nd Floor, Uttam Nagar,
+          Delhi – 110059, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Left: Logo + Tagline -->
+    <div class="footer-column footer-logo">
+      <img src="The Milestone Logo.png" alt="The Milestone Research Logo">
+      <p class="tagline">The people's opinion matters!</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-column">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Qualitative</a></li>
+        <li><a href="#">Quantitative</a></li>
+        <li><a href="#">Communities</a></li>
+        <li><a href="#">Global Research</a></li>
+        <li><a href="#">Sampling Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-column">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Data Privacy</a></li>
+      </ul>
+    </div>
+
+    <!-- India Office -->
+    <div class="footer-column contact-info">
+      <h4>India</h4>
+      <p>House No. 55,</p>
+      <p>2nd Floor, Uttam Nagar,</p>
+      <p>Delhi – 110059, India</p>
+      <p><i class="fas fa-phone"></i> +91 87006 36997</p>
+      <p><i class="fas fa-envelope"></i> sales@themilestoneresearch.com</p>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="footer-container" style="margin-top: 40px;">
+    <div class="footer-column" style="width: 100%;">
+      <div class="newsletter-form">
+        <label for="newsletter">Sign up for TMSR Newsletter!</label>
+        <div class="newsletter-input">
+          <input type="email" id="newsletter" placeholder="Business Email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    © 2025 The Milestone Research – All Rights Reserved<br>
+    Powered by <a href="#">Adaptable Services</a>
+  </div>
+</footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<script src="https://kit.fontawesome.com/6a3ae3eba4.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="path/to/market-trends.js"></script>
+</body>
+</html>
